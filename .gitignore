@@ -1,0 +1,41 @@
+# Python cache/build output
+.git/
+.git_upload/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and local environment files
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# PyInstaller output
+build/
+dist/
+
+# Local/generated runtime data
+tmp/
+tmp*/
+outputs/
+logs/
+*.log
+
+# Local debug/browser artifacts
+debug_page_source.html
+
+# Accidental packaged/vendor artifacts copied into the project root
+win32/
+win32com/
+*.pyd
+*.pyd.backup
+
+# Excel/user run artifacts
+~$*.xlsx
+*.xlsm
+*.bak

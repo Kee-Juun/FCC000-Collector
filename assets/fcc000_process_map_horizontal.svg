@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1880" height="860" viewBox="0 0 1880 860" role="img" aria-labelledby="title desc">
+  <title id="title">FCC000 Collector Process Map</title>
+  <desc id="desc">Presentation-ready horizontal process map for FCC000 Collector with a simple six-step flow and two exception callouts.</desc>
+  <defs>
+    <style>
+      .title { font: 700 38px "Segoe UI", Arial, sans-serif; fill: #18314b; }
+      .subtitle { font: 400 18px "Segoe UI", Arial, sans-serif; fill: #60778e; }
+      .pill { font: 700 13px "Segoe UI", Arial, sans-serif; fill: #2c4b68; letter-spacing: 1.2px; }
+      .step-title { font: 700 28px "Segoe UI", Arial, sans-serif; fill: #17324d; }
+      .step-body { font: 500 17px "Segoe UI", Arial, sans-serif; fill: #35506a; }
+      .callout-title { font: 700 22px "Segoe UI", Arial, sans-serif; fill: #17324d; }
+      .callout-body { font: 500 16px "Segoe UI", Arial, sans-serif; fill: #3f5a75; }
+      .tag { font: 700 14px "Segoe UI", Arial, sans-serif; fill: #17324d; }
+      .line { stroke: #7f97af; stroke-width: 5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .branch { stroke: #9aabbd; stroke-width: 3.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .card { stroke-width: 2.5; rx: 30; }
+      .callout { stroke-width: 2.5; rx: 26; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#17324d" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M0 0 L14 7 L0 14 z" fill="#7f97af"/>
+    </marker>
+    <marker id="branchArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 z" fill="#9aabbd"/>
+    </marker>
+  </defs>
+
+  <rect width="1880" height="860" fill="#f7fbff"/>
+
+  <text x="78" y="74" class="title">FCC000 Collector Process Map</text>
+  <text x="78" y="106" class="subtitle">Executive view of the run flow from date selection to duplicate checking, download handling, and final reporting.</text>
+
+  <!-- Main cards -->
+  <rect x="90" y="214" width="250" height="212" class="card" fill="#e9f8ef" stroke="#5bb77c" filter="url(#shadow)"/>
+  <rect x="374" y="214" width="250" height="212" class="card" fill="#ffe7ed" stroke="#d96e8d" filter="url(#shadow)"/>
+  <rect x="658" y="214" width="250" height="212" class="card" fill="#eaf2ff" stroke="#6f9aff" filter="url(#shadow)"/>
+  <rect x="942" y="214" width="250" height="212" class="card" fill="#fff3df" stroke="#e2b04e" filter="url(#shadow)"/>
+  <rect x="1226" y="214" width="250" height="212" class="card" fill="#fff3df" stroke="#e2b04e" filter="url(#shadow)"/>
+  <rect x="1510" y="214" width="250" height="212" class="card" fill="#efe6ff" stroke="#a481e3" filter="url(#shadow)"/>
+
+  <!-- Step pills -->
+  <rect x="112" y="188" width="92" height="28" rx="14" fill="#d7f1e0"/>
+  <rect x="396" y="188" width="92" height="28" rx="14" fill="#ffd8e2"/>
+  <rect x="680" y="188" width="92" height="28" rx="14" fill="#dbe8ff"/>
+  <rect x="964" y="188" width="92" height="28" rx="14" fill="#ffe8b9"/>
+  <rect x="1248" y="188" width="92" height="28" rx="14" fill="#ffe8b9"/>
+  <rect x="1532" y="188" width="92" height="28" rx="14" fill="#e3d7ff"/>
+
+  <text x="158" y="207" text-anchor="middle" class="pill">STEP 1</text>
+  <text x="442" y="207" text-anchor="middle" class="pill">STEP 2</text>
+  <text x="726" y="207" text-anchor="middle" class="pill">STEP 3</text>
+  <text x="1010" y="207" text-anchor="middle" class="pill">STEP 4</text>
+  <text x="1294" y="207" text-anchor="middle" class="pill">STEP 5</text>
+  <text x="1578" y="207" text-anchor="middle" class="pill">STEP 6</text>
+
+  <!-- Card copy -->
+  <text x="215" y="284" text-anchor="middle" class="step-title">Select</text>
+  <text x="215" y="320" text-anchor="middle" class="step-title">Date Range</text>
+  <text x="215" y="362" text-anchor="middle" class="step-body">Choose one date</text>
+  <text x="215" y="388" text-anchor="middle" class="step-body">or multiple dates</text>
+
+  <text x="499" y="284" text-anchor="middle" class="step-title">Validate</text>
+  <text x="499" y="320" text-anchor="middle" class="step-title">Dates</text>
+  <text x="499" y="362" text-anchor="middle" class="step-body">Reject future dates</text>
+  <text x="499" y="388" text-anchor="middle" class="step-body">and bad ranges</text>
+
+  <text x="783" y="284" text-anchor="middle" class="step-title">Start Run</text>
+  <text x="783" y="320" text-anchor="middle" class="step-title">Load IRT</text>
+  <text x="783" y="362" text-anchor="middle" class="step-body">Create run files</text>
+  <text x="783" y="388" text-anchor="middle" class="step-body">and load duplicate data once</text>
+
+  <text x="1067" y="284" text-anchor="middle" class="step-title">Scan FCC</text>
+  <text x="1067" y="320" text-anchor="middle" class="step-title">Pages</text>
+  <text x="1067" y="362" text-anchor="middle" class="step-body">Open each digest page</text>
+  <text x="1067" y="388" text-anchor="middle" class="step-body">and gather PDF links</text>
+
+  <text x="1351" y="284" text-anchor="middle" class="step-title">Check</text>
+  <text x="1351" y="320" text-anchor="middle" class="step-title">Download</text>
+  <text x="1351" y="362" text-anchor="middle" class="step-body">Skip duplicates</text>
+  <text x="1351" y="388" text-anchor="middle" class="step-body">download only new files</text>
+
+  <text x="1635" y="284" text-anchor="middle" class="step-title">Report</text>
+  <text x="1635" y="320" text-anchor="middle" class="step-title">Finish</text>
+  <text x="1635" y="362" text-anchor="middle" class="step-body">Create reports</text>
+  <text x="1635" y="388" text-anchor="middle" class="step-body">show completion prompt</text>
+
+  <!-- Main arrows -->
+  <path d="M340 320 L374 320" class="line" marker-end="url(#arrow)"/>
+  <path d="M624 320 L658 320" class="line" marker-end="url(#arrow)"/>
+  <path d="M908 320 L942 320" class="line" marker-end="url(#arrow)"/>
+  <path d="M1192 320 L1226 320" class="line" marker-end="url(#arrow)"/>
+  <path d="M1476 320 L1510 320" class="line" marker-end="url(#arrow)"/>
+
+  <!-- Top annotation -->
+  <rect x="640" y="78" width="540" height="42" rx="21" fill="#edf5fb" stroke="#d5e3ef" stroke-width="1.8"/>
+  <text x="910" y="105" text-anchor="middle" class="tag">IRT duplicate data is loaded once at the start, then reused during the run.</text>
+
+  <!-- Bottom callouts -->
+  <rect x="300" y="554" width="400" height="158" class="callout" fill="#fdecea" stroke="#d67063" filter="url(#shadow)"/>
+  <text x="500" y="604" text-anchor="middle" class="callout-title">If Dates Are Invalid</text>
+  <text x="500" y="640" text-anchor="middle" class="callout-body">Show a warning prompt</text>
+  <text x="500" y="666" text-anchor="middle" class="callout-body">and wait for the user to correct the selection.</text>
+
+  <rect x="1272" y="554" width="452" height="158" class="callout" fill="#edf5fb" stroke="#86a7c5" filter="url(#shadow)"/>
+  <text x="1498" y="604" text-anchor="middle" class="callout-title">If Nothing New Was Downloaded</text>
+  <text x="1498" y="640" text-anchor="middle" class="callout-body">Look up the most recent FCC document in IRT</text>
+  <text x="1498" y="666" text-anchor="middle" class="callout-body">and include it in the finish message and reports.</text>
+
+  <!-- Branch connectors -->
+  <path d="M499 426 L499 520" class="branch"/>
+  <path d="M499 520 L500 520 L500 554" class="branch" marker-end="url(#branchArrow)"/>
+  <text x="514" y="474" class="tag">Invalid</text>
+
+  <path d="M1493 426 L1493 520" class="branch"/>
+  <path d="M1493 520 L1498 520 L1498 554" class="branch" marker-end="url(#branchArrow)"/>
+  <text x="1510" y="474" class="tag">0 downloads</text>
+
+  <!-- Footer note -->
+  <text x="78" y="804" class="subtitle">Inside steps 4 and 5, the app repeats the same pattern for each selected date and each PDF found on that date.</text>
+</svg>
